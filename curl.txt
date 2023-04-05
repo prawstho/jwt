@@ -1,3 +1,3 @@
-curl -X POST http://localhost:3000/login -H 'Content-Type: application/json' -d '{"username":"Peter"}'
+curl -X POST http://localhost:3000/login -H "Content-Type: application/json" -d "{\"username\":\"Peter\"}"
 
 curl -X GET http://localhost:3000/posts -H "Authorization: Bearer [token-goes-here]"
