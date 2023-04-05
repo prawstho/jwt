@@ -25,7 +25,7 @@ app.get('/posts', authToken, (req, res) => {
 
 app.post('/login', (req, res) => {
     // Authenticate User Now
-
+    if(DEBUG) console.log(req.body);
     const username = req.body.username;
     if(DEBUG) console.log('req.body.username ' + username);
     const user = { name: username };
